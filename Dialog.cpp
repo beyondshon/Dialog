@@ -40,3 +40,4 @@ int main() {
 	std::cout << "А тебе?" << std::endl;
 	std::cin >> y;
 	std::cout << "А мне " << y << std::endl;
+}	
