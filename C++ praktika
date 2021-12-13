@@ -1,0 +1,67 @@
+#include "Header.h"
+
+void foo() {
+	setlocale(LC_ALL, "Russian");
+	std::cout << "Hey there!" << std::endl;
+	std::cout << "Enter your login: " << std::endl;
+	std::string login;
+	std::cin >> login;
+	if (login == "SuperGamer")
+	{
+
+		std::cout << "Enter your password" << std::endl;
+		std::string password;
+		std::cin >> password;
+		if (password == "supergamer12345") {
+			std::cout << "1. View information about weather in city, or in some countries" << std::endl;
+			std::cout << "2. Learn some information about how this is made in C++" << std::endl;
+			std::cout << "3. Which device do you wanna restart?" << std::endl;
+			std::cout << "4. view averaged data from measuring devices for the entire duration of the experiment " << std::endl;
+			int number;
+			std::cin >> number;
+			if (number == 1) {
+				std::cout << "It is cold in Norway";
+			}
+			else if (number == 2) {
+				std::cout << "#include" << " \"#Header\"" << std::endl;
+			}
+			else if (number == 3) {
+
+
+				std::cout << "Which device do you wanna restart?" << std::endl;
+				std::cout << "1. North" << std::endl;
+				std::cout << "2. South" << std::endl;
+			}
+			else if (number == 4) {
+				std::cout << "North - 35 ГэВ, South - 18 ГэВ" << std::endl;
+			}
+		}
+	}
+	else {
+		std::cout << "Continue as guest?" << std::endl;
+		std::cout << "1. Yes" << std::endl;
+		std::cout << "2. No" << std::endl;
+		int number2;
+		std::cin >> number2;
+		if (number2 == 1) {
+			std::cout << "1. View information about weather in city, or in some countries" << std::endl;
+			std::cout << "2. Learn some information about how this is made in C++" << std::endl;
+			std::cout << "3. view averaged data from measuring devices for the entire duration of the experiment " << std::endl;
+			int number;
+			std::cin >> number;
+			if (number == 1) {
+				std::cout << "It is cold in Norway";
+			}
+			else if (number == 2) {
+				std::cout << "#include" << " \"#Header\"" << std::endl;
+			}
+			else if (number == 3) {
+				std::cout << "North - 35 ГэВ, South - 18 ГэВ" << std::endl;
+			}
+		}
+		else if (number2 == 2) {
+			return;
+		}
+	}
+	
+}
